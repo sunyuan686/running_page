@@ -16,7 +16,7 @@ const getBasePath = () => {
 
 const data: ISiteMetadataResult = {
   siteTitle: 'Running Page',
-  siteUrl: 'https://yihong.run',
+  siteUrl: 'https://run.xixihaha.tech',
   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
   description: 'Personal site and blog',
   navLinks: [
@@ -26,7 +26,11 @@ const data: ISiteMetadataResult = {
     },
     {
       name: 'Blog',
-      url: 'https://github.com/yihong0618/gitblog',
+      url: 'https://blog.xixihaha.tech',
+    },
+    {
+      name: 'Bilibili',
+      url: 'https://space.bilibili.com/441461849?spm_id_from=333.1007.0.0',
     },
     {
       name: 'About',
