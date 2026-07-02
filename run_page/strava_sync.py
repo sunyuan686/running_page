@@ -4,7 +4,6 @@ import json
 from config import JSON_FILE, SQL_FILE
 from generator import Generator
 
-
 # for only run type, we use the same logic as garmin_sync
 def run_strava_sync(
     client_id,
