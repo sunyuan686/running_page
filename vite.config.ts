@@ -81,7 +81,13 @@ export default defineConfig({
       },
     }),
   ],
-  base: process.env.PATH_PREFIX ? `${process.env.PATH_PREFIX}/` : '/',
+  base: (() => {
+    const prefix = process.env.PATH_PREFIX;
+    if (!prefix || prefix === '/') {
+      return '/';
+    }
+    return prefix.endsWith('/') ? prefix : `${prefix}/`;
+  })(),
   define: {
     'import.meta.env.VERCEL': JSON.stringify(process.env.VERCEL),
   },
